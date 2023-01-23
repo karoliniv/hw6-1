@@ -14,9 +14,7 @@ public class StatsService {
     public double averageAmountOfSales(int[] sale) {
         int sum = 0;
 
-        for (int i = 0; i < sale.length; i++) {
-            sum = sum + sale[i];
-        }
+        sum = sumOfAllSales(sale);
 
         double averageSum = sum / sale.length;
         return averageSum;
@@ -71,9 +69,7 @@ public class StatsService {
         int sum = 0;
         int month = 0;
 
-        for (int i = 0; i < sale.length; i++) {
-            sum = sum + sale[i];
-        }
+        sum = sumOfAllSales(sale);
 
         double averageSum = sum / sale.length;
 
